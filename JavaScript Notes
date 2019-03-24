@@ -101,10 +101,10 @@ JavaScript Notes:
    - Example, in the book: binding prompt holds code that asks for user input
    - Functions are invoked, called, or applied
 
-  E. Arguments
+  H. Arguments
    - Arguments are values given to functions
 
-  F. console.log
+  I. console.log
    - Used to output values (like puts or print in Ruby)
      - Ex:
        let x = 30;
