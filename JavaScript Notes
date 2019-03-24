@@ -1,0 +1,112 @@
+JavaScript Notes:
+
+1. Values
+ - Values have types that determine their role
+ - Values are invoked with a name
+
+  A. Number Values
+   - Numeric values
+   - Fractional numbers are written with a dot
+   - Math
+     - 100 + 4 * 11
+     - + and * are 'operators'
+     - % is the remainder operator
+     - Special numbers:
+     - `Infinity` and `-Infinity`
+
+  B. Strings
+   - `Down on the sea`
+   - "Lie on the ocean"
+   - 'Float on the ocean'
+     - Anything in these quotes or ticks is stringified
+     - `\n` is the newline character
+     - `\\` will put a backslash character into the string
+     - "con" + "cat" + "e" + "nate"
+     - Strings have their own associated functions (methods)
+
+  C. Unary operators
+   - Used to tell you the type of value given to it.
+   - Example: console.log(typeof 4.5) will tell you that it's a number
+   - Example: console.log(typeof "x") will tell you that it's a string
+
+  D. Boolean operators
+   - >  greater than
+   - <  less than
+   - >= greater than or equal to
+   - <= less than or equal to
+   - == equal to
+   - != not equal to
+   - NaN (not a number) - this can never be NaN == Nan
+
+  E. Logical operators
+   - and, or, and not
+   - && - 'and' (logical) - binary operator - true only if both of the values given are true
+     - ex: console.log(true && false)
+           // false
+     - ex: console.log(true && true)
+           // true
+   - || - 'or' (logical) - true if either of the given values are true
+
+  F. Comparison without type conversion
+   - JS tries its best to process evaluation statements to the point that it ends up doing conversions
+   - To avoid that...
+     - === used for when you really want to evaluate truthiness without type conversion
+     - !== used for when you really want to evaluate falseness without type conversion
+
+2. Program Structure
+
+  A. Expressions and Statements
+   - "A fragment of code that produces a value is called an expression."
+   - Expressions are the equivalent to a fragment of a sentence.
+   - Statements are the equivalent to a full sentence.
+
+  B. Semicolons to separate statements
+   1;
+   !false;
+   - It's a statement, ended with a semicolon.
+   - It's not a super useful program but it's still a program.
+   - Semicolons separate statements
+
+  C. Variables/Bindings
+   - Example:
+     let caught = 5 * 5;
+   - After defining a binding, it can be used as an expression
+   - The binding holds the value of the code assigned to it
+   - Example:
+     let ten = 10;
+     console.log(ten * ten)
+     // 100
+
+  D. Reassigning of bindings
+   - Bindings can be reassigned
+   - Ex:
+     let mood = "light";
+     console.log(mood);
+     // light
+     mood = "dark";
+     console.log(mood);
+     // dark
+
+  E. Bindings using let, var, const
+   - var: old form, pre-2015 JavaScript
+   - let: current form, can be reassigned. See 2.C. above.
+   - const: constant binding - always points to the same value and can't be reassigned
+
+  F. Binding names
+   - Only allowed special characters are _ and $
+   - Cannot have the same name as a reserved word in the language
+
+  G. Functions (type)
+   - Piece of programming wrapped within a variable
+   - Example, in the book: binding prompt holds code that asks for user input
+   - Functions are invoked, called, or applied
+
+  E. Arguments
+   - Arguments are values given to functions
+
+  F. console.log
+   - Used to output values (like puts or print in Ruby)
+     - Ex:
+       let x = 30;
+       console.log("the value of x is", x)
+       // the value of x is 30
